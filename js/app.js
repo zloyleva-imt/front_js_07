@@ -109,4 +109,7 @@ cl(sum)
 
 cl(stuff.reduce((acc,el)=>acc + el.salary,0));
 
-avgSalaryStuff(stuff)
+const avgSalaryStuff = arr => {
+    return arr.reduce((acc,el)=>acc + el.salary,0)/arr.length
+}
+cl(avgSalaryStuff(stuff))
